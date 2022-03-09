@@ -13,7 +13,7 @@ var level = 0;
 $("#start").fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300);
 $("#start").click(function(){
   if(!started){
-    $("p").text("Keep Going🦾");
+    
     $("h1").text("Level " + level);
     $("p").text("Click on the blinked colour at first. At the Second level you have to click the first colour and then second and at the third level click first, second, third and so on. So you have to remember the all level colours in sequence. If you are giving in a wrong sequence then Game Over.");
     nextSequence();
@@ -80,6 +80,7 @@ function checkAnswer(currentLevel) {
 function nextSequence(){
   userClickedPattern=[];
   level++;
+  $("p").text("Keep Going🦾");
   $("h1").text("Level " + level);
   var randomNumber = Math.floor(Math.random()*4);
   var randomChosenColor = buttonColors[randomNumber];
