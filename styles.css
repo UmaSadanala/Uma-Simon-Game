@@ -31,7 +31,16 @@ p{
   border: 10px solid black;
   border-radius: 20%;
 }
-
+#start{
+  margin: auto;
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 20%;
+  font-weight: bold;
+}
 .game-over {
   background-color: red;
   opacity: 0.8;
@@ -62,4 +71,10 @@ footer{
   font-size: 1.5rem;
   margin:  5%;
   color: #FEF2BF;
+}
+@media screen and (max-width: 1000px)  {
+  .btn {
+    width: 80px;
+    height: 80px;
+  }
 }
