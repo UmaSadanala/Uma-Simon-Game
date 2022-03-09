@@ -61,14 +61,11 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
       }, 200);
 
-      // if(level-1<5){
-      //   $("p").text("Your Score is : " +level-1)
-      // }
-
-      $("h1").text("Game Over, Press Start Game to Restart");
+     
+      $("h1").text("Game Over, Your Score is : " + (level-1));
       $("#start").fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300);
      
-        $("p").text("Your Score is : " + (level-1));
+        $("p").text("Press Start Game to Restart");
 
 
 
