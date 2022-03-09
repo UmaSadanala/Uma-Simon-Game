@@ -10,7 +10,7 @@ var started = false;
 var level = 0;
 
 
-
+$("#start").fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300);
 $("#start").click(function(){
   if(!started){
     $("p").text("Keep Going🦾");
@@ -66,8 +66,8 @@ function checkAnswer(currentLevel) {
       // }
 
       $("h1").text("Game Over, Press Start Game to Restart");
-
-
+      $("#start").fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300);
+     
         $("p").text("Your Score is : " + (level-1));
 
 
