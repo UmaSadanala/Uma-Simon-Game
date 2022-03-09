@@ -11,7 +11,7 @@ var level = 0;
 
 
 
-$(#start).click(function(){
+$("#start").click(function(){
   if(!started){
     $("h1").text("Level " + level);
     $("p").text("Click on the blinked colour at first. At the Second level you have to click the first colour and then second and at the third level click first, second, third and so on. So you have to remember the all level colours in sequence. If you are giving in a wrong sequence then Game Over.");
